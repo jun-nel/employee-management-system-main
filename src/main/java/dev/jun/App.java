@@ -11,7 +11,7 @@ public class App extends FXApplication {
     public void initialize() throws Exception {
 
         setTitle("babyjared_Employ");
-        setSkin(FXSkin.DRACULA);
+        setSkin(FXSkin.PRIMER_LIGHT);
         _initialize_application();
     }
 
