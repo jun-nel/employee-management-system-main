@@ -5,7 +5,7 @@ module jun.employee_management {
     requires core.fx;
     requires core.db;
     requires javafx.graphics;
-
+    
     opens dev.jun to javafx.fxml;
     opens dev.jun.app to java.fxml;
     

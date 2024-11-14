@@ -35,7 +35,7 @@ public class RootController extends FXController{
     @Override
     protected void load_bindings() {
         employee_masterlist = FXCollections.observableArrayList();
-      
+       employee_department = FXCollections.observableArrayList();
     }
 
     @Override
