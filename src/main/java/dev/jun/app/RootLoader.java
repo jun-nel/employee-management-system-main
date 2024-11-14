@@ -16,6 +16,9 @@ public class RootLoader extends FXLoader{
             Parent root = loader.load();
             scene.setRoot(root);
 
+            RootController controller = loader.getController();
+            controller.load();
+
         } catch (Exception e) {
             e.printStackTrace();
         }

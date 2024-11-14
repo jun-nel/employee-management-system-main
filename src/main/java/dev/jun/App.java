@@ -7,7 +7,8 @@ import dev.sol.core.scene.FXSkin;
 import dev.sol.db.DBService;
 
 public class App extends FXApplication {
-    public static final DBService DB_EMPLOYEE = DBService.INSTANCE.initialize("jdbc:mysq://Localhost/employee");
+    public static final DBService DB_EMPLOYEE = DBService.INSTANCE
+             .initialize("jdbc:mysql://Localhost/employee?user=root&password=");
 
     @Override
     public void initialize() throws Exception {

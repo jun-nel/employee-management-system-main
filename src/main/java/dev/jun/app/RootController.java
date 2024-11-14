@@ -1,8 +1,8 @@
 package dev.jun.app;
 
-import javafx.scene.control.TableView;
-
+import dev.jun.Models.Department;
 import dev.jun.Models.Employee;
+import dev.jun.data.DepartmentDAO;
 import dev.sol.core.application.FXController;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -36,6 +36,8 @@ public class RootController extends FXController{
     protected void load_bindings() {
         employee_masterlist = FXCollections.observableArrayList();
        employee_department = FXCollections.observableArrayList();
+
+       System.out.println(DepartmentDAO.getDepartmentlist());
     }
 
     @Override
